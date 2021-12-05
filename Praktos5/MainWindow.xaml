@@ -1,0 +1,29 @@
+﻿<Window x:Class="Praktos5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Praktos5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="firstPairBox" HorizontalAlignment="Left" Margin="129,131,0,0" TextWrapping="Wrap" Text="" IsReadOnly="True" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="firstPairFirstNumberBox" HorizontalAlignment="Left" Margin="129,185,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="firstPairSecondNumberBox" HorizontalAlignment="Left" Margin="129,217,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="compositionBox"  HorizontalAlignment="Left" Margin="319,166,0,0" TextWrapping="Wrap" Text="" IsReadOnly="True" VerticalAlignment="Top" Width="146" Height="28"/>
+        <Button Content="Заполнить пару" HorizontalAlignment="Left" Margin="144,249,0,0" VerticalAlignment="Top" Click="FirstPairFill"/>
+        <Label Content="Первая пара:" HorizontalAlignment="Left" Margin="40,127,0,0" VerticalAlignment="Top"/>
+        <Label Content="Первое число пары:" HorizontalAlignment="Left" Margin="10,181,0,0" VerticalAlignment="Top"/>
+        <Label Content="Второе число пары:" HorizontalAlignment="Left" Margin="11,213,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="secondPairBox" HorizontalAlignment="Left" Margin="633,131,0,0" TextWrapping="Wrap" Text="" IsReadOnly="True" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="secondPairFirstNumber" HorizontalAlignment="Left" Margin="633,185,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="secondPairSecondNumber" HorizontalAlignment="Left" Margin="633,217,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Заполнить пару" HorizontalAlignment="Left" Margin="648,249,0,0" VerticalAlignment="Top" Click="SecondPairFill"/>
+        <Label Content="Вторая пара:" HorizontalAlignment="Left" Margin="544,127,0,0" VerticalAlignment="Top"/>
+        <Label Content="Первое число пары:" HorizontalAlignment="Left" Margin="514,181,0,0" VerticalAlignment="Top"/>
+        <Label Content="Второе число пары:" HorizontalAlignment="Left" Margin="515,213,0,0" VerticalAlignment="Top"/>
+        <Button Content="Рассчитать произведение" HorizontalAlignment="Left" Margin="319,206,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.318,-0.461" Click="CountComposition"/>
+        <Button Content="Выход" HorizontalAlignment="Left" Margin="11,381,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.438,0.212" Click="Exit"/>
+        <Button Content="Информация" HorizontalAlignment="Left" Margin="83,381,0,0" VerticalAlignment="Top" Click="Info"/>
+    </Grid>
+</Window>
